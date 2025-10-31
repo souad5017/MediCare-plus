@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendez-vous</title>
+    <link href="/src/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="/src/input.css" rel="stylesheet">
+</head>
+
+<body>
+    <section id="Rendez-vous" class="bg-blue-200 ">
+        <header>
+            <div class="flex gap-80 bg-blue-300 items-center">
+                <h3 class="flex items-center font-bold text-4xl stroke-text"><img
+                        src="/img/Capture d'écran 2025-10-30 115930(1).png" alt="logo"
+                        class="w-[60px] h-[60px] m-3 ml-[5rem] ">
+                    <a href="index.html" class="text-[#1BA0E6] text-4xl font-bold stroke-text">MediCare+</a>
+                </h3>
+                <ul class="text-[20px] text-[#063E6F] font-medium flex gap-10">
+                    <li><a href="/index.html" class="hover:text-blue-600">Accueil</a></li>
+                    <li><a href="/pages/Medecins.html" class="hover:text-blue-600">Medecins</a></li>
+                    <li><a href="/pages/Rendez-vous.html" class="hover:text-blue-600">Rendez-vous</a></li>
+                    <li><a href="/pages/" class="hover:text-blue-600">Suivi Santé</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="flex flex-col justify-between m-[3rem] mb-4 gap-2.5">
+            <h1 class="text-4xl font-extrabold text-blue-700 text-shadow-blue-700">Gestion des Rendez-vous</h1>
+            <p class=" text-gray-600">Prenez rendez-vous avec nos médecins spécialistes</p>
+        </div>
+        <div class="flex flex-row h-screen ms:flex-wrap pb-5">
+            <div
+                class="w-full max-w-[43.5rem] h-auto bg-white shadow-lg rounded-2xl p-6 hover:shadow-2xl transition m-7 flex flex-col p-[1.5rem] gap-10 items-center">
+                <div class="flex flex-col gap-10 items-center w-full">
+                    <h1 class="text-2xl -mb-3 text-blue-900">Nouveau rendez-vous</h1>
+
+                    <div class="w-full h-[35px]">
+                        <label for="text" class="flex ml-3 gap-3"><img src="/img/user.png" alt=""
+                                class="w-[18px] h-[18px] ">
+                            Nom complet</label>
+                        <input type="text" class="border pl-3 rounded-[10px] w-full h-[36px]"
+                            placeholder="Entrez votre nom complet">
+                    </div>
+                    <div class="w-full h-[35px]">
+                        <label for="text" class="flex ml-3 gap-3"><img src="/img/mail.png" alt=""
+                                class="w-[18px] h-[18px] ">
+                            Email</label>
+                        <input type="email" class="border pl-3 rounded-[10px] w-full h-[36px]"
+                            placeholder="exemple@email.com">
+                    </div>
+                    <div class="w-full h-[35px]">
+                        <label for="nom" class="flex ml-3 gap-3"><img src="/img/calendar.png" alt=""
+                                class="w-[18px] h-[18px] ">
+                            Date</label>
+                        <input type="date" class="border pl-3 rounded-[10px] w-full h-[36px]" placeholder="jj/mm/aaaa">
+                    </div>
+                    <div class="w-full h-[35px]">
+                        <label for="nom" class="flex ml-3 gap-3"><img src="/img/clock.png" alt=""
+                                class="w-[18px] h-[18px] ">
+                            Heure</label>
+                        <select class="border pl-3 rounded-[10px] w-full h-[36px]">
+                            <option value="" disabled selected hidden>Choisir un créneau</option>
+                            <option value="">08:00</option>
+                            <option value="">09:00</option>
+                            <option value="">10:00</option>
+                            <option value="">11:00</option>
+                            <option value="">12:00</option>
+                            <option value="">13:00</option>
+                            <option value="">14:00</option>
+                            <option value="">15:00</option>
+                            <option value="">16:00</option>
+                            <option value="">17:00</option>
+                        </select>
+                    </div>
+                    <div class="w-full h-[35px]">
+                        <label for="nom" class="flex ml-3 gap-3"><img src="/img/stethoscope-medical-tool.png" alt=""
+                                class="w-[18px] h-[18px] "> Médecin</label>
+                        <select class="border pl-3 rounded-[10px] w-full h-[36px]">
+
+                            <option value="" disabled selected hidden>Sélectionner un médecin</option>
+                            <option value="Cardiologue">Dr. Ahmed Ben Ali</option>
+                            <option value="Dermatologue">Dr. Salma El Fassi</option>
+                            <option value="Pédiatre">Dr. Karim Bouziane</option>
+                            <option value="Dentiste">Dr. Nadia El Amrani</option>
+                            <option value="Neurologue">Dr. Youssef Chakroun</option>
+                        </select>
+                    </div>
+                    <div class="w-full h-[35px]">
+                        <label for="nom" class="flex ml-3 gap-3"><img src="/img/document.png" alt=""
+                                class="w-[18px] h-[18px] "> Motif de consultation</label>
+                        <textarea id="message" name="message" required
+                            placeholder="Décrivez votre motif de consultation..."
+                            class="border pl-3 rounded-[10px] w-full h-[45px]"></textarea>
+                    </div>
+                </div>
+                <button class="shadow-xl rounded-[10px] w-full h-[45px] bg-sky-500 mt-5 active:bg-sky-800">
+                    prendre rendez-vous
+                </button>
+            </div>
+
+            <div
+                class="w-full max-w-[43.5rem] h-[45%] bg-white shadow-lg rounded-2xl p-6 hover:shadow-2xl m-7 transition flex flex-col p-[1.5rem] gap-10">
+                <h1 class="text-2xl -mb-3 text-blue-900">Mes rendez-vous (0)</h1>
+                <div class="flex flex-col items-center justify-center gap-5">
+                    <img src="/img/calendar1.png" alt="" class="w-[80px]">
+                    <h2 class="text-xl text-[#666666]">Aucun rendez-vous prévu</h2>
+                    <p class="text-[#7C7C7C]">Utilisez le formulaire pour prendre votre premier rendez-vous</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+        <!-- ============================= Footre =========================== -->
+    <footer id="footer" class="flex flex-col justify-between items-center text-center bg-sky-300 ">
+        <div class="p-3">
+            <p>© 2025 MediCare+. Tous droits réservés.</p>
+            <p>Plateforme de santé en ligne pour vos conseils, vos rendez-vous et votre bien-être.</p>
+        </div>
+        <div class="flex justify-between gap-5 pb-[20px]">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img class="w-[2rem]" src="/img/facebook.png"
+                    alt="facebook icon">
+            </a>
+            <a href="https://www.x.com/" target="_blank">
+                <img class="w-[2rem]" src="/img/twitter.png" alt="x icon">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img class="w-[2rem]" src="/img/instagram.png" 
+                    alt="instagram icon" >
+            </a>
+        </div>
+    </footer>
+</body>
+
+
+
+</html>

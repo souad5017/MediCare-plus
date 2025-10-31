@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCare+</title>
+    <link href="./src/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="/src/input.css" rel="stylesheet">
+
+</head>
+<html>
+
+<body>
+    <header>
+        <div class="flex gap-80 bg-blue-300 items-center">
+            <h3 class="flex items-center font-bold text-4xl stroke-text"><img
+                    src="/img/Capture d'écran 2025-10-30 115930(1).png" alt="logo"
+                    class="w-[60px] h-[60px] m-3 ml-[5rem] ">
+                <a href="index.html" class="text-[#1BA0E6] text-4xl font-bold stroke-text">MediCare+</a>
+            </h3>
+            <ul class="text-[20px] text-[#063E6F] font-medium flex gap-10">
+                <li><a href="/index.html" class="hover:text-blue-600">Accueil</a></li>
+                <li><a href="/pages/Medecins.html" class="hover:text-blue-600">Medecins</a></li>
+                <li><a href="/pages/Rendez-vous.html" class="hover:text-blue-600">Rendez-vous</a></li>
+                <!-- <li><a href="/pages/" class="hover:text-blue-600">Suivi Santé</a></li> -->
+            </ul>
+
+
+        </div>
+    </header>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="Accueil" class=" bg-sky-200 p-7">
+        <div class="flex flex-col justify-center items-center gap-3 mt-[7rem]">
+            <h1 class="text-5xl text-blue-900 font-bold">Bienvenue sur MediCare+</h1>
+            <p class="text-gray-600 mt-2 text-center">La plateforme de consultations et de suivi médical en ligne.
+                Réservez
+                vos rendez-vous et suivez votre santé facilement.</p>
+            <button class=" rounded-[10px] w-[250px] h-[50px] text-[19px] mt-7 bg-sky-100 shadow-lg rounded-2xl transition hover:bg-sky-300"><a
+                    href="/pages/rendez-vous.html">Commencer maintenant</a></button>
+        </div>
+
+
+
+        <div class="relative w-full flex justify-center items-center mt-10">
+            <div id="carousel"
+                class="flex transition-transform duration-700 ease-in-out w-[50rem] overflow-hidden rounded-2xl bg-sky-300 gap-4 h-[15rem] ">
+                <div class="flex-shrink-0 w-full flex flex-col items-center justify-center p-4 ">
+                    <img src="img/glass-of-water.png" alt="" class="w-[40px] mb-2">
+                    <h1 class="text-xl font-bold text-blue-800 text-center">Buvez 8 verres d'eau par jour</h1>
+                    <p class="text-center text-gray-600">
+                        L’eau est essentielle pour maintenir l’hydratation, aider à la digestion, et éliminer les
+                        toxines du corps.
+                        Gardez une bouteille d’eau à portée de main et buvez régulièrement tout au long de la journée.
+                    </p>
+                </div>
+
+                <div class="flex-shrink-0 w-full flex flex-col items-center justify-center p-4">
+                    <img src="/img/training.png" alt="" class="w-[50px] mb-2">
+                    <h1 class="text-xl font-bold text-blue-800 text-center">Faites 30 minutes de sport quotidiennement</h1>
+                    <p class="text-center text-gray-600">
+                        L’activité physique régulière améliore la circulation sanguine, renforce le cœur et réduit le
+                        stress.
+                    </p>
+                </div>
+
+                <div class="flex-shrink-0 w-full flex flex-col items-center justify-center p-4 ">
+                    <img src="/img/sleeping.png" alt="" class="w-[50px] mb-2">
+                    <h1 class="text-xl font-bold text-blue-800 text-center">Assurez-vous de bien dormir chaque nuit</h1>
+                    <p class="text-center text-gray-600">
+                        Un sommeil suffisant permet au corps de récupérer et renforce le système immunitaire.
+                    </p>
+                </div>
+
+                <div class="flex-shrink-0 w-full flex flex-col items-center justify-center p-4">
+                    <img src="/img/vegetable.png" alt="" class="w-[50px] mb-2">
+                    <h1 class="text-xl font-bold text-blue-800 text-center">Mangez équilibré et varié</h1>
+                    <p class="text-center text-gray-600">
+                        Une alimentation équilibrée fournit les nutriments essentiels et aide à prévenir les maladies
+                        chroniques.
+                    </p>
+                </div>
+
+                <div class="flex-shrink-0 w-full flex flex-col items-center justify-center p-4 ">
+                    <img src="/img/calm.png" alt="" class="w-[50px] mb-2">
+                    <h1 class="text-xl font-bold text-blue-800 text-center">Prenez soin de votre santé mentale</h1>
+                    <p class="text-center text-gray-600">
+                        Le stress et l’anxiété peuvent affecter le corps et le moral. Faites des pauses, méditez ou
+                        parlez avec un proche.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="text-center mb-7 mt-[5rem]">
+            <h2 class="text-3xl font-bold text-blue-800">Articles &amp; Conseils Santé</h2>
+            <p class="text-gray-600 mt-2">Découvrez nos conseils pratiques pour rester en bonne santé</p>
+        </div>
+        <div class="flex ml-[3rem] mr-[3rem] mb-5 justify-center ">
+            <form action="" class="w-[40rem]">
+                <img src="/img/search.png" alt="" class="w-[20px] h-[20px] absolute items-center m-2.5">
+                <input type="text" placeholder="Rechercher un article & conseils santé ..."
+                    class="w-full pl-10 py-2 font-semibold placeholder-gray-500 text-gray-500 rounded-2xl border-none ring-2 ring-gray-400 focus:ring-gray-500 ">
+            </form>
+
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-6 md:px-20 pb-[5rem] flex-wrap">
+
+            <article class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+                <h3 class="text-xl font-semibold text-blue-700 mb-2">Comment renforcer votre système immunitaire</h3>
+                <p class="text-gray-600 mb-4">Une alimentation riche en vitamines et un bon sommeil renforcent vos
+                    défenses naturelles.</p>
+
+            </article>
+
+            <article class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+                <h3 class="text-xl font-semibold text-blue-700 mb-2">Les dangers de la sédentarité</h3>
+                <p class="text-gray-600 mb-4">Rester assis trop longtemps augmente le risque de maladies cardiaques et
+                    de diabète.</p>
+
+            </article>
+
+            <article class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+                <h3 class="text-xl font-semibold text-blue-700 mb-2">L’impact du café sur la santé</h3>
+                <p class="text-gray-600 mb-4">Le café peut être bénéfique en petite quantité, mais l’excès peut causer
+                    de l’anxiété et des troubles du sommeil.</p>
+
+            </article>
+
+            <article class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+                <h3 class="text-xl font-semibold text-blue-700 mb-2">L’importance de la santé mentale</h3>
+                <p class="text-gray-600 mb-4">Prendre soin de son esprit est aussi important que de prendre soin de son
+                    corps.</p>
+
+            </article>
+
+            <article class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+                <h3 class="text-xl font-semibold text-blue-700 mb-2">Pourquoi faire des pauses pendant le travail</h3>
+                <p class="text-gray-600 mb-4">Faire des pauses régulières améliore la concentration et réduit la fatigue
+                    mentale.</p>
+
+            </article>
+
+            <article class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+                <h3 class="text-xl font-semibold text-blue-700 mb-2">Bien respirer pour mieux vivre</h3>
+                <p class="text-gray-600 mb-4">Une respiration profonde aide à réduire le stress et à améliorer la
+                    circulation sanguine.</p>
+            </article>
+
+        </div>
+
+
+    </section>
+    <!-- ============================= Footre =========================== -->
+    <footer id="footer" class="flex flex-col justify-between items-center text-center bg-sky-300">
+        <div class="p-3">
+            <p>© 2025 MediCare+. Tous droits réservés.</p>
+            <p>Plateforme de santé en ligne pour vos conseils, vos rendez-vous et votre bien-être.</p>
+        </div>
+        <div class="flex justify-between gap-5 pb-[20px]">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img class="w-[2rem]" src="/img/facebook.png" alt="facebook icon">
+            </a>
+            <a href="https://www.x.com/" target="_blank">
+                <img class="w-[2rem]" src="/img/twitter.png" alt="x icon">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img class="w-[2rem]" src="/img/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
