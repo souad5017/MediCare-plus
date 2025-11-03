@@ -13,3 +13,54 @@ h1, h2, h3 {
 #medecins{
     background-color: rgb(210, 229, 249);
 }
+label{
+    color:#FFFFFF;
+    display: none;
+}
+label::before{
+content: "\2630";
+font-size: 25px;
+cursor: pointer;
+position: absolute;
+right: 1rem;
+top: 0.5rem;
+z-index: 1000;
+}
+input[type="checkbox"] {
+    display: none;
+}
+ header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 70px;
+    /* z-index: 1000; */
+}
+ @media (max-width: 768px){
+    nav {
+    position: fixed;
+     height: 3.5rem;
+     top: -100%;
+     width:50%;
+     height:100%;
+     margin-left: 50%;
+     background-color: #291603ef;
+     transition: left .4s ease-in-out;
+    }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+  
+  }  label {
+    display: block;
+
+  input[type="checkbox"]:checked + nav {
+    top: 4.4rem;
+    right: 0;
+    transition: left .4s ease-in-out;
+  }
+}
+ }
